@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: rgb(172, 209, 205);
+    font-family: 'Nunito';
+    background-color: #1E1F31;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+header {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+header ul li a {
+    text-decoration: none;
+    color:rgb(121, 157, 197);
+    font-size: 20px;
+}
+header ul li a:hover {
+    color:rgb(172, 209, 205)
+}
+header ul li a.btn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border:2px solid rgb(121, 157, 197);
+    border-radius: 20px;
+    line-height: 20px;
+    background-color:#562856;
+}
+header ul li a.btn:hover {
+    background-color: #808080;
+    border: 2px solid navy;
+    color: navy;
+    font-weight: 900;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 100px 0;
+}
+p {
+    width: 50%;
+    margin-left: 125px;
+}
+.fa {
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(172, 209, 205);
+}
+span {
+    color: #a15ea1;
+}
+.button {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.013rem;
+    font-size: 20px;
+    color: rgb(121, 157, 197);
+    display: inline-block;
+    text-align: center;
+    height: 6vh;
+    padding: 10px;
+    border: none;
+    font-weight: 900;
+    /*border:2px solid rgb(121, 157, 197);
+    border-radius: 10px;*/
+    line-height: 20px;
+    margin-left: 220px;
+    margin-top: 80px;
+}
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #562856;
+    z-index: -1;
+    transition: all ease 0.5s;
+}
+.button:hover:before {
+    width: 100%;
+}
+.img {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(500px, rgb(121, 157, 197), transparent 50%);
+    margin-top: -50px;
+}
+.fa-envelope-square {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+}
+.icons {
+    height: 100%;
+}
+.icons i {
+    position: absolute;
+}
