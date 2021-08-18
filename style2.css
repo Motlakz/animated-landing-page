@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: rgb(172, 209, 205);
+    font-family: 'Nunito';
+    background-color: #1E1F31;
+    overflow-x: hidden;
+}
+.wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+header {
+    padding: 30px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+nav {
+    display: flex;
+}
+nav a {
+    color:rgb(121, 157, 197);
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    color:rgb(172, 209, 205);
+}
+span {
+    color: #a15ea1;
+}
+.button {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.013rem;
+    font-size: 20px;
+    color: rgb(121, 157, 197);
+    /*text-align: center;*/
+    height: 6vh;
+    padding: 10px;
+    border: none;
+    font-weight: 900;
+    line-height: 20px;
+    margin-left: 220px;
+    margin-top: 80px;
+}
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #562856;
+    z-index: -1;
+    transition: all ease 0.5s;
+}
+.button:hover:before {
+    width: 100%;
+}
+.img {
+    position: relative;
+    left: 350px;
+    bottom: 250px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(500px, rgb(121, 157, 197), transparent 50%);
+    margin-top: -50px;
+    animation: rotate 5s infinite;
+}
+.fa-envelope-square {
+    position: absolute;
+    top: 47%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}
+.icons {
+    height: 100%;
+    font-size: 20px;
+}
+.fa-linkedin {
+    position: absolute;
+    left: 20%;
+}
+.fa-facebook-square {
+    position: absolute;
+    right: 20%;
+}
+.fa-pinterest {
+    position: absolute;
+    left: 80%;
+    bottom: 40%;
+}
+.fa-instagram {
+    position: absolute;
+    right: 80%;
+    bottom: 40%;
+}
+.fa-twitter {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    100% {
+    transform: rotate(360deg);
+    }
+    
+}
+
+@media screen and (max-width: 765px) {
+    .logo {
+        position: fixed;
+        left: 5%;
+        border:1px solid rgb(68, 143, 209);
+        padding: 10px;
+    }
+    nav {
+    flex-direction: column;
+    }
+    nav ul {
+        display: block;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+        background-color:rgb(172, 209, 205);
+        border-radius: 10px;
+        transform: translateX(1000px);
+    }
+    nav ul li:hover {
+        background-color: rgb(68, 143, 209);
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        padding: 20px;
+    }
+    .menu-bar {
+        background-color: aqua;
+        display: block;
+        position: absolute;
+        height: 0.5rem;
+        right: 0;
+        width: 10%;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+        border: 1px solid #fff;
+        transition: 1s ease;
+    }
+    .open {
+        transform: translateX(0);
+        transition: 1s ease;
+    }
+    .open-menu-bar {
+        transform: rotate(90deg);
+    }
+    nav ul li a {
+        color: rgb(139, 0, 139);
+    }
+    section {
+        width: 90%;
+    }
+    .fa-envelope-square {
+        position: fixed;
+        top: 65%;
+        left: 60%;
+        font-size: 70px;
+    }
+    .img {
+        position: fixed;
+        left: 25px;
+        top: 45%;
+        width: 450px;
+        height: 450px;
+        background: radial-gradient(450px, rgb(121, 157, 197), transparent 50%);
+        margin-top: -50px;
+        animation: rotate 5s infinite;
+    }
+    .fa {
+        border: 2px solid rgb(172, 209, 205);
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .fa-facebook-square {
+        top: 20%;
+    }
+    .fa-linkedin {
+        top: 15%;
+        left: 33%;
+    }
+    .fa-twitter {
+        top: 85%;
+    }
+    .fa-instagram {
+        left: 11%;
+    }
+}

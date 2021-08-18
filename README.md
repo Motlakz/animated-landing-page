@@ -20,8 +20,7 @@ My first attempt at an animated landing page.
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
-- Visit separate sections on click through their respective links.
-- See a moving waves background paired with rotating social media icons on a different area of the page.
+- See rotating social media icons on a different area of the page.
 - Be redirected to a form after clicking the 'Sign Up' button.
 
 ### My Process
@@ -36,7 +35,7 @@ I watched a code-along tutorial and took notes for future reference. Built along
 
 ### What I learned
 
-I learned how to implement some basic CSS Layout propeties and apply CSS Animations to a landing page.
+I learned how to implement some basic CSS Layout propeties and apply CSS Animations to a static landing page.
 
 ### Continued development
 

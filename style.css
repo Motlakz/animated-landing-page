@@ -22,7 +22,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-header ul li {
+nav ul li {
     list-style: none;
     display: inline-block;
     margin: 0 15px;
@@ -82,8 +82,6 @@ span {
     padding: 10px;
     border: none;
     font-weight: 900;
-    /*border:2px solid rgb(121, 157, 197);
-    border-radius: 10px;*/
     line-height: 20px;
     margin-left: 220px;
     margin-top: 80px;
@@ -105,21 +103,52 @@ span {
 }
 .img {
     position: relative;
+    left: 350px;
+    bottom: 250px;
     width: 500px;
     height: 500px;
     background: radial-gradient(500px, rgb(121, 157, 197), transparent 50%);
     margin-top: -50px;
+    animation: rotate 5s infinite;
 }
 .fa-envelope-square {
     position: absolute;
-    top: 80%;
-    left: 50%;
+    top: 47%;
+    left: 73%;
     transform: translate(-50%, -50%);
-    font-size: 120px;
+    font-size: 100px;
 }
 .icons {
     height: 100%;
 }
-.icons i {
+.fa-linkedin {
     position: absolute;
+    left: 20%;
+}
+.fa-facebook-square {
+    position: absolute;
+    right: 20%;
+}
+.fa-pinterest {
+    position: absolute;
+    left: 80%;
+    bottom: 40%;
+}
+.fa-instagram {
+    position: absolute;
+    right: 80%;
+    bottom: 40%;
+}
+.fa-twitter {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    100% {
+    transform: rotate(360deg);
+    }
+    
 }
