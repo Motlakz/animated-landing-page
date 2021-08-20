@@ -173,6 +173,7 @@ nav ul li a.btn:hover {
     background-color: rgb(172, 209, 205);
     border-radius: 10px;
     transform: translateX(1000px);
+    z-index: 10;
     }
     nav ul li:hover {
     background-color: rgb(68, 143, 209);
@@ -227,9 +228,9 @@ nav ul li a.btn:hover {
     position: absolute;
     left: 2%;
     top: 58%;
-    width: 450px;
-    height: 450px;
-    background: radial-gradient(450px, rgb(121, 157, 197), transparent 50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(400px, rgb(121, 157, 197), transparent 50%);
     margin-top: -50px;
     animation: rotate 5s infinite;
     }
