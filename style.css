@@ -44,7 +44,7 @@ nav a:hover {
 span {
     color: #a15ea1;
 }
-.text {
+p {
     width: 80%;
     padding: 25px;
 }
@@ -204,7 +204,7 @@ nav ul li a.btn:hover {
     nav ul li a {
     color: rgb(139, 0, 139);
     }
-    .text {
+    p {
     width: 90%;
     position: relative;
     right: 40px;
